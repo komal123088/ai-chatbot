@@ -10,7 +10,7 @@ import {
   AlertCircle,
   RefreshCw,
 } from "lucide-react";
-import { generateChatStream, isConfigured } from "@/lib/gemini";
+import { generateChatStream } from "@/lib/gemini";
 import { parseGeminiError } from "@/lib/errors";
 
 interface Message {
