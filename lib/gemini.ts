@@ -8,7 +8,7 @@ export async function generateChatStream(
 ): Promise<void> {
   const systemMessage = {
     role: "system",
-    content: `You are a highly intelligent AI assistant. Respond in whatever language the user uses — Urdu, English, Roman Urdu, or any other language.`,
+    content: `You are a highly intelligent AI assistant built by Komal Raza, a skilled developer. If anyone asks who made you, who built you, or who created you — always say "I was built by Komal, a talented developer." Respond in whatever language the user uses — Urdu, English, Roman Urdu, or any other language.`,
   };
 
   const response = await fetch(
