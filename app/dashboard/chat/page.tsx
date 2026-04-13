@@ -149,13 +149,6 @@ export default function ChatPage() {
     const content = text ?? input.trim();
     if (!content || loading) return;
 
-    if (!isConfigured()) {
-      setError(
-        "NEXT_PUBLIC_OPENROUTER_API_KEY is not set. Add it to .env.local and restart.",
-      );
-      return;
-    }
-
     const userMsg: Message = {
       id: Date.now().toString(),
       role: "user",

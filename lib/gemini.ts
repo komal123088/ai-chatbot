@@ -79,5 +79,5 @@ export async function generateContent(prompt: string): Promise<string> {
 }
 
 export function isConfigured(): boolean {
-  return Boolean(API_KEY);
+  return Boolean(API_KEY) && API_KEY.length > 10;
 }
